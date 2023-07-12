@@ -19,9 +19,7 @@ const Countdown = () => {
 
   const handleSetsChange = (e) => {
     const value = parseInt(e.target.value);
-    if (value > 0) {
-      setSets(value);
-    }
+    setSets(value);
   };
 
   const resetValues = () => {
@@ -127,7 +125,6 @@ const Countdown = () => {
           value={sets}
           onChange={handleSetsChange}
           className="border rounded px-2 py-1"
-          min="1"
         />
       </div>
       <button
